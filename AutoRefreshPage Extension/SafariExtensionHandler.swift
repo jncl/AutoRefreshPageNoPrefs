@@ -8,7 +8,7 @@
 
 import SafariServices
 
-let myDebug = false;
+let myDebug      = false;
 var initialSetup = false
 
 let reloadBlackList  = [ "developer.apple.com", "google.co.uk", "bbc.co.uk/sport/live" ]

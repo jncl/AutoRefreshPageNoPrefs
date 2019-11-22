@@ -18,6 +18,7 @@ if (window.top === window) {
 
     }
     
+    // check for reload when page receives focus
     function onFocus(){
         if (myDebug) console.log("onFocus");
 
@@ -29,7 +30,7 @@ if (window.top === window) {
 
     safari.self.addEventListener("message", handleMessage);
     
-    // handle when page gets focus
+    // spcify handler to run when page gets focus
     window.onfocus = onFocus;
 
 }
