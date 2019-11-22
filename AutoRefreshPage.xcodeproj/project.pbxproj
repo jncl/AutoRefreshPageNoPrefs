@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12DEE62E2382CCE900E957AF /* AutoRefreshPage.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 12DEE62D2382CCE900E957AF /* AutoRefreshPage.entitlements */; };
+		12DEE6302382CCE900E957AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE62F2382CCE900E957AF /* AppDelegate.swift */; };
+		12DEE6332382CCE900E957AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DEE6312382CCE900E957AF /* Main.storyboard */; };
+		12DEE6352382CCE900E957AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE6342382CCE900E957AF /* ViewController.swift */; };
+		12DEE6372382CCEB00E957AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DEE6362382CCEB00E957AF /* Assets.xcassets */; };
+		12DEE63E2382CCEB00E957AF /* AutoRefreshPage Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 12DEE63D2382CCEB00E957AF /* AutoRefreshPage Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		12DEE6432382CCEB00E957AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12DEE6422382CCEB00E957AF /* Cocoa.framework */; };
+		12DEE6462382CCEB00E957AF /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE6452382CCEB00E957AF /* SafariExtensionHandler.swift */; };
+		12DEE64E2382CCEB00E957AF /* injected.js in Resources */ = {isa = PBXBuildFile; fileRef = 12DEE64D2382CCEB00E957AF /* injected.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12DEE63F2382CCEB00E957AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12DEE6222382CCE900E957AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12DEE63C2382CCEB00E957AF;
+			remoteInfo = "ReloadTabs Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12DEE6572382CCEB00E957AF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				12DEE63E2382CCEB00E957AF /* AutoRefreshPage Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12DEE62A2382CCE900E957AF /* AutoRefreshPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoRefreshPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12DEE62D2382CCE900E957AF /* AutoRefreshPage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoRefreshPage.entitlements; sourceTree = "<group>"; };
+		12DEE62F2382CCE900E957AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12DEE6322382CCE900E957AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12DEE6342382CCE900E957AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12DEE6362382CCEB00E957AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12DEE6382382CCEB00E957AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12DEE63D2382CCEB00E957AF /* AutoRefreshPage Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AutoRefreshPage Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12DEE6422382CCEB00E957AF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		12DEE6452382CCEB00E957AF /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		12DEE64C2382CCEB00E957AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12DEE64D2382CCEB00E957AF /* injected.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = injected.js; sourceTree = "<group>"; };
+		12DEE6512382CCEB00E957AF /* AutoRefreshPage_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoRefreshPage_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12DEE6272382CCE900E957AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DEE63A2382CCEB00E957AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DEE6432382CCEB00E957AF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12DEE6212382CCE900E957AF = {
+			isa = PBXGroup;
+			children = (
+				12DEE62C2382CCE900E957AF /* AutoRefreshPage */,
+				12DEE6442382CCEB00E957AF /* AutoRefreshPage Extension */,
+				12DEE6412382CCEB00E957AF /* Frameworks */,
+				12DEE62B2382CCE900E957AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12DEE62B2382CCE900E957AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12DEE62A2382CCE900E957AF /* AutoRefreshPage.app */,
+				12DEE63D2382CCEB00E957AF /* AutoRefreshPage Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12DEE62C2382CCE900E957AF /* AutoRefreshPage */ = {
+			isa = PBXGroup;
+			children = (
+				12DEE62D2382CCE900E957AF /* AutoRefreshPage.entitlements */,
+				12DEE62F2382CCE900E957AF /* AppDelegate.swift */,
+				12DEE6312382CCE900E957AF /* Main.storyboard */,
+				12DEE6342382CCE900E957AF /* ViewController.swift */,
+				12DEE6362382CCEB00E957AF /* Assets.xcassets */,
+				12DEE6382382CCEB00E957AF /* Info.plist */,
+			);
+			path = AutoRefreshPage;
+			sourceTree = "<group>";
+		};
+		12DEE6412382CCEB00E957AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12DEE6422382CCEB00E957AF /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12DEE6442382CCEB00E957AF /* AutoRefreshPage Extension */ = {
+			isa = PBXGroup;
+			children = (
+				12DEE6452382CCEB00E957AF /* SafariExtensionHandler.swift */,
+				12DEE64C2382CCEB00E957AF /* Info.plist */,
+				12DEE64D2382CCEB00E957AF /* injected.js */,
+				12DEE6512382CCEB00E957AF /* AutoRefreshPage_Extension.entitlements */,
+			);
+			path = "AutoRefreshPage Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12DEE6292382CCE900E957AF /* AutoRefreshPage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12DEE6582382CCEB00E957AF /* Build configuration list for PBXNativeTarget "AutoRefreshPage" */;
+			buildPhases = (
+				12DEE6262382CCE900E957AF /* Sources */,
+				12DEE6272382CCE900E957AF /* Frameworks */,
+				12DEE6282382CCE900E957AF /* Resources */,
+				12DEE6572382CCEB00E957AF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12DEE6402382CCEB00E957AF /* PBXTargetDependency */,
+			);
+			name = AutoRefreshPage;
+			productName = ReloadTabs;
+			productReference = 12DEE62A2382CCE900E957AF /* AutoRefreshPage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12DEE63C2382CCEB00E957AF /* AutoRefreshPage Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12DEE6542382CCEB00E957AF /* Build configuration list for PBXNativeTarget "AutoRefreshPage Extension" */;
+			buildPhases = (
+				12DEE6392382CCEB00E957AF /* Sources */,
+				12DEE63A2382CCEB00E957AF /* Frameworks */,
+				12DEE63B2382CCEB00E957AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AutoRefreshPage Extension";
+			productName = "ReloadTabs Extension";
+			productReference = 12DEE63D2382CCEB00E957AF /* AutoRefreshPage Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12DEE6222382CCE900E957AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Jon Hogg";
+				TargetAttributes = {
+					12DEE6292382CCE900E957AF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					12DEE63C2382CCEB00E957AF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 12DEE6252382CCE900E957AF /* Build configuration list for PBXProject "AutoRefreshPage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12DEE6212382CCE900E957AF;
+			productRefGroup = 12DEE62B2382CCE900E957AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12DEE6292382CCE900E957AF /* AutoRefreshPage */,
+				12DEE63C2382CCEB00E957AF /* AutoRefreshPage Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12DEE6282382CCE900E957AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DEE62E2382CCE900E957AF /* AutoRefreshPage.entitlements in Resources */,
+				12DEE6372382CCEB00E957AF /* Assets.xcassets in Resources */,
+				12DEE6332382CCE900E957AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DEE63B2382CCEB00E957AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DEE64E2382CCEB00E957AF /* injected.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12DEE6262382CCE900E957AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DEE6352382CCE900E957AF /* ViewController.swift in Sources */,
+				12DEE6302382CCE900E957AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DEE6392382CCEB00E957AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DEE6462382CCEB00E957AF /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12DEE6402382CCEB00E957AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12DEE63C2382CCEB00E957AF /* AutoRefreshPage Extension */;
+			targetProxy = 12DEE63F2382CCEB00E957AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12DEE6312382CCE900E957AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12DEE6322382CCE900E957AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12DEE6522382CCEB00E957AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12DEE6532382CCEB00E957AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		12DEE6552382CCEB00E957AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AutoRefreshPage Extension/AutoRefreshPage_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EGP9NZS84E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "AutoRefreshPage Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.strangled.AutoRefreshPage-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		12DEE6562382CCEB00E957AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AutoRefreshPage Extension/AutoRefreshPage_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EGP9NZS84E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "AutoRefreshPage Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.strangled.AutoRefreshPage-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		12DEE6592382CCEB00E957AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoRefreshPage/AutoRefreshPage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EGP9NZS84E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = AutoRefreshPage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.strangled.AutoRefreshPage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		12DEE65A2382CCEB00E957AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoRefreshPage/AutoRefreshPage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EGP9NZS84E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = AutoRefreshPage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.strangled.AutoRefreshPage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12DEE6252382CCE900E957AF /* Build configuration list for PBXProject "AutoRefreshPage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12DEE6522382CCEB00E957AF /* Debug */,
+				12DEE6532382CCEB00E957AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12DEE6542382CCEB00E957AF /* Build configuration list for PBXNativeTarget "AutoRefreshPage Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12DEE6552382CCEB00E957AF /* Debug */,
+				12DEE6562382CCEB00E957AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12DEE6582382CCEB00E957AF /* Build configuration list for PBXNativeTarget "AutoRefreshPage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12DEE6592382CCEB00E957AF /* Debug */,
+				12DEE65A2382CCEB00E957AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12DEE6222382CCE900E957AF /* Project object */;
+}
