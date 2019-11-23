@@ -18,19 +18,14 @@ if (window.top === window) {
 
     }
     
-    // check for reload when page receives focus
-    function onFocus(){
-        if (myDebug) console.log("onFocus");
-
-        safari.extension.dispatchMessage("checkReloadRequired");
-        
-    };
-
     if (myDebug) console.log("injected into " + location.href);
 
     safari.self.addEventListener("message", handleMessage);
     
-    // spcify handler to run when page gets focus
-    window.onfocus = onFocus;
+    // check for reload when page receives focus
+    window.onfocus = function() {
+        if (myDebug) console.log("onFocus");
+        safari.extension.dispatchMessage("checkReloadRequired");
+    };
 
 }

@@ -19,40 +19,15 @@ let refreshInterval2 = 7200 // 2 hours
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
     
-    fileprivate func checkBlackList(_ urlString: String) -> Bool{
+    fileprivate func checkList(_ urlString: String, _ list: [String]) -> Bool{
 
-        for partBL in reloadBlackList {
-            if urlString.contains(partBL) {
-               return false
-            }
-        }
-        if myDebug { NSLog("Page not blacklisted") }
-        return true
-
-    }
-
-    fileprivate func checkWhiteList1(_ urlString: String) -> Bool {
- 
-        for partWL1 in reloadWhiteList1 {
-            if urlString.contains(partWL1) {
-                if myDebug { NSLog("in WhiteList1") }
-                return true
+        for partURL in list {
+            if urlString.contains(partURL) {
+               return true
             }
         }
         return false
 
-    }
-    
-    fileprivate func checkWhiteList2(_ urlString: String) -> Bool {
- 
-        for partWL2 in reloadWhiteList2 {
-            if urlString.contains(partWL2) {
-                if myDebug { NSLog("in WhiteList2") }
-                return true
-            }
-        }
-        return false
- 
     }
 
     fileprivate func checkLists4Site(_ currentPage: SFSafariPage) {
@@ -61,12 +36,12 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             if ((properties?.url) != nil) {
                 let urlString = properties?.url?.absoluteString
                 if myDebug { NSLog("checkLists4Site Page: (\(urlString!))") }
-                if self.checkBlackList(urlString!) {
-                    if self.checkWhiteList1(urlString!) {
+                if !self.checkList(urlString!, reloadBlackList) {
+                    if self.checkList(urlString!, reloadWhiteList1) {
                         if myDebug { NSLog("reload (\(refreshInterval1))") }
                         currentPage.dispatchMessageToScript(withName: "reload", userInfo: ["rInt" : refreshInterval1])
                     }
-                    if self.checkWhiteList2(urlString!) {
+                    if self.checkList(urlString!, reloadWhiteList2) {
                         if myDebug { NSLog("reload (\(refreshInterval2))") }
                         currentPage.dispatchMessageToScript(withName: "reload", userInfo: ["rInt" : refreshInterval2])
                     }
