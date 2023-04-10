@@ -8,12 +8,12 @@
 
 import SafariServices
 
-let myDebug      = false;
+let myDebug      = false
 var initialSetup = false
 
 let reloadBlackList  = [ "developer.apple.com", "google.co.uk", "bbc.co.uk/sport/live" ]
 let reloadWhiteList1 = [ "bbc.co.uk/news", "bbc.co.uk/sport" ]
-let reloadWhiteList2 = [ "trakt.tv", "forum.tinycorelinux.net/index.php" ]
+let reloadWhiteList2 = [ "trakt.tv" ]
 let refreshInterval1 = 600  // 10 mins
 let refreshInterval2 = 7200 // 2 hours
 
