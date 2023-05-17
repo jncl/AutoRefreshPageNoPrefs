@@ -32,7 +32,7 @@
 		<array>
 			<dict>
 				<key>Script</key>
-				<string>injected.js</string>
+				<string>injectedScript.js</string>
 			</dict>
 		</array>
 		<key>SFSafariWebsiteAccess</key>

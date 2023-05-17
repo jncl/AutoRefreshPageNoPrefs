@@ -6,10 +6,10 @@ if (window.top === window) {
     // All non-iframe code goes before the closing brace.
 
     function handleMessage(event) {
-        if (myDebug) console.log("injected - handleMessage", event, lastReloadTimestamp);
+        if (myDebug) console.log("injectedScript - handleMessage", event, lastReloadTimestamp);
 
         if (event.name === "reload" && event.timeStamp > lastReloadTimestamp + (event.message.rInt * 1000)) {
-            if (myDebug) console.log("reloading Page")
+            if (myDebug) console.log("reloading Page: " + location.href)
             location.reload(true);
         }
         
@@ -18,7 +18,7 @@ if (window.top === window) {
 
     }
     
-    if (myDebug) console.log("injected into " + location.href);
+    if (myDebug) console.log("AutoRefreshPage injected script into: " + location.href);
 
     safari.self.addEventListener("message", handleMessage);
     
