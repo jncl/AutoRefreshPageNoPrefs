@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -85,6 +85,7 @@
 				12DEE62B2382CCE900E957AF /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		12DEE62B2382CCE900E957AF /* Products */ = {
 			isa = PBXGroup;
@@ -174,7 +175,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = "Jon Hogg";
 				TargetAttributes = {
 					12DEE6292382CCE900E957AF = {
@@ -186,7 +187,6 @@
 				};
 			};
 			buildConfigurationList = 12DEE6252382CCE900E957AF /* Build configuration list for PBXProject "AutoRefreshPage" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -194,6 +194,7 @@
 				Base,
 			);
 			mainGroup = 12DEE6212382CCE900E957AF;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 12DEE62B2382CCE900E957AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -303,6 +304,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -368,6 +370,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -448,7 +451,6 @@
 		12DEE6592382CCEB00E957AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AutoRefreshPage/AutoRefreshPage.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -480,7 +482,6 @@
 		12DEE65A2382CCEB00E957AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AutoRefreshPage/AutoRefreshPage.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
