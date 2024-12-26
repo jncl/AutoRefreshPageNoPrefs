@@ -3,7 +3,7 @@
 //  AutoRefreshPage Extension
 //
 //  Created by Jon Hogg on 18/11/2019.
-//  Copyright © 2019-2023 Jon Hogg. All rights reserved.
+//  Copyright © 2019-2024 Jon Hogg. All rights reserved.
 //
 
 import SafariServices

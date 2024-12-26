@@ -46,7 +46,7 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2019-2023 Jon Hogg. All rights reserved.</string>
+	<string>Copyright © 2019-2024 Jon Hogg. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
 	<string>Automatically Refresh Page after a specified delay</string>
 </dict>
